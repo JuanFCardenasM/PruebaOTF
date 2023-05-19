@@ -42,6 +42,17 @@ header {
         height: 1.25rem;
       }
     }
+    .menu-title {
+      display: none;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      line-height: 1.3rem;
+      font-weight: bold;
+      color: #262626;
+    }
+    .menu-mobile {
+      display: none;
+    }
     .menu {
       display: flex;
       gap: 2rem;
@@ -143,7 +154,7 @@ main {
         .round-button {
           width: fit-content;
           font-weight: lighter;
-          padding: 0.5rem;
+          padding: 0.5rem 2rem;
           border-radius: 200px;
           background-color: #F10A0A;
           border: 2px solid #F10A0A;
@@ -672,10 +683,28 @@ footer {
     padding-right: 0;
     .nav-bar {
       width: 100%;
-      .menu {
-        overflow-x: scroll;
+      .menu-desktop {
+        display: none;
+      }
+      .menu-mobile {
+        display: block;
         width: 100%;
-        padding: 0 1rem;
+      }
+      .menu-title {
+        display: block;
+        background: #dddddd;
+        padding: 1rem;
+        width: 100%;
+        border: none;
+      }
+      .menu {
+        transition: 1s;
+        display: none;
+        grid-template-columns: auto auto;
+        padding: 1rem 0;
+        .menu-button {
+          text-align: center;
+        }
       }
     }
   }

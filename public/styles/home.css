@@ -39,6 +39,17 @@ header .nav-bar .social-media {
 header .nav-bar .social-media .social-media-icon {
   height: 1.25rem;
 }
+header .nav-bar .menu-title {
+  display: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 1.3rem;
+  font-weight: bold;
+  color: #262626;
+}
+header .nav-bar .menu-mobile {
+  display: none;
+}
 header .nav-bar .menu {
   display: flex;
   gap: 2rem;
@@ -140,7 +151,7 @@ main .main-section .form-container form .terms-container {
 main .main-section .form-container form .round-button {
   width: fit-content;
   font-weight: lighter;
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   border-radius: 200px;
   background-color: #F10A0A;
   border: 2px solid #F10A0A;
@@ -623,10 +634,28 @@ footer .legal-container a {
   header .nav-bar {
     width: 100%;
   }
-  header .nav-bar .menu {
-    overflow-x: scroll;
+  header .nav-bar .menu-desktop {
+    display: none;
+  }
+  header .nav-bar .menu-mobile {
+    display: block;
     width: 100%;
-    padding: 0 1rem;
+  }
+  header .nav-bar .menu-title {
+    display: block;
+    background: #dddddd;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+  }
+  header .nav-bar .menu {
+    transition: 1s;
+    display: none;
+    grid-template-columns: auto auto;
+    padding: 1rem 0;
+  }
+  header .nav-bar .menu .menu-button {
+    text-align: center;
   }
 
   main .main-section {

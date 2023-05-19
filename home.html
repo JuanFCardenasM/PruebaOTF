@@ -26,7 +26,7 @@
           <img src="public/assets/images/Instagram.png" alt="">
         </a>
       </div>
-      <div class="menu">
+      <div class="menu menu-desktop">
         <a class="menu-button" href="#">
           Lorem Ipsum
         </a>
@@ -51,6 +51,35 @@
         <a class="menu-button" href="#">
           Lorem
         </a>
+      </div>
+      <div class="menu-mobile">
+        <button class="menu-title" id="menuButton">Menu &#8681;</button>
+        <div class="menu" id="homeMenu">
+          <a class="menu-button" href="#">
+            Lorem Ipsum
+          </a>
+          <a class="menu-button" href="#">
+            Lorem Ipsum
+          </a>
+          <a class="menu-button" href="#">
+            Lorem
+          </a>
+          <a class="menu-button" href="#">
+            Lorem Ipsum
+          </a>
+          <a class="menu-button" href="#">
+            Lorem Ipsum
+          </a>
+          <a class="menu-button" href="#">
+            Lorem
+          </a>
+          <a class="menu-button" href="#">
+            Lorem Ipsum
+          </a>
+          <a class="menu-button" href="#">
+            Lorem
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -349,5 +378,17 @@
       <a href="#">copyright</a>
     </div>
   </footer>
+  
+  <script>
+    document.getElementById("menuButton").onclick = function() {
+      if (document.getElementById("homeMenu").style.display === "grid"){
+        document.getElementById("homeMenu").style.display = "none";
+        document.getElementById("menuButton").innerHTML = "Menu &#8681;";
+      } else {
+        document.getElementById("homeMenu").style.display = "grid";
+        document.getElementById("menuButton").innerHTML = "Menu &#8679;";
+      }
+    };  
+  </script>
 </body>
 </html>
