@@ -667,6 +667,24 @@ footer .legal-container a {
   main .main-section .form-container {
     width: 100%;
   }
+  main .main-section .form-container form {
+    gap: 1.5rem;
+  }
+  main .main-section .form-container form input[type=text], main .main-section .form-container form input[type=date], main .main-section .form-container form textarea, main .main-section .form-container form select {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  main .main-section .form-container form .terms-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+  }
+  main .main-section .form-container form .terms-container input {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
   main .second-section .content {
     flex-direction: column;
   }
@@ -698,6 +716,10 @@ footer .legal-container a {
   }
   main .sixth-section .content .side-image {
     width: 100%;
+  }
+  main .sixth-section .content .side-image .image-card .info .squaredish-button {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
   }
 
   footer .footer-container .footer-content {

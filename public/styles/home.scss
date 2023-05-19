@@ -716,6 +716,24 @@ footer {
       }
       .form-container {
         width: 100%;
+        form {
+          gap: 1.5rem;
+          input[type=text], input[type=date], textarea, select {
+            font-size: 1.2rem;
+            padding: 1rem;
+          }
+          .terms-container {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 1.2rem;
+            input {
+              height: 1.5rem;
+              width: 1.5rem;
+            }
+          }
+        }
       }
     }
     .second-section {
@@ -759,6 +777,14 @@ footer {
         padding: 2rem;
         .side-image {
           width: 100%;
+          .image-card {
+            .info {
+              .squaredish-button {
+                font-size: 1.2rem;
+                padding: 1rem 2.5rem;
+              }
+            }
+          }
         }
       }
     }
